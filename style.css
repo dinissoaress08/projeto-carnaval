@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+}
+
+/* TÍTULOS */
+h1, h2 {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("imagem_head.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.titulo {
+  font-size: 5em;
+  animation: animTitulo 2s infinite alternate;
+  text-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+}
+
+@keyframes animTitulo {
+  0% { transform: translateY(0); color: white; }
+  50% { transform: translateY(-10px); color: #ffd700; }
+  100% { transform: translateY(10px); color: #00ffff; }
+}
+
+/* MENU */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #9DD6E3;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #71C6CC;
+}
+
+/* MAIN */
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.secao {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* ANIMAÇÃO */
+.animar {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* GALERIA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+figure {
+  text-align: center;
+}
+
+.imagem {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 4px solid #71C6CC;
+  transition: 0.3s;
+}
+
+.imagem:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* VIDEO */
+video {
+  width: 70%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.video-container {
+  text-align: center;
+}
+
+.creditos-video {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* TROFÉU */
+.trofeu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* IMAGEM */
+.trofeu-img {
+  width: 260px;
+  border-radius: 15px;
+  border: 3px solid #71C6CC; /* ALTERADO AQUI */
+  position: relative;
+  z-index: 2;
+  background: #71C6CC;
+}
+
+/* FUNDO AZUL ATRÁS */
+.trofeu-box {
+  background: #71C6CC;
+  padding: 60px;
+  border-radius: 20px;
+  margin-left: -40px;
+  z-index: 1;
+}
+
+/* CARTÃO */
+.trofeu-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  transform: rotate(-4deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  max-width: 300px;
+}
+
+.trofeu-card h3 {
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+/* CONTACTOS */
+.contacto {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* RODAPÉ */
+.rodape-final {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 14px;
+  border-top: 3px solid #1f4f4f;
+}
